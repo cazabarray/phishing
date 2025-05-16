@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Espace de connexion</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <h1>Se connecter</h1>
+            <input type="text" placeholder="Nom d'utilisateur">
+            <input type="password" placeholder="Mot de passe">
+            <button type="submit">Se connecter</button>
+        </form>
+    </main>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            alert("Ne fais plus jamais ça, sois certain que tu sois sur un site sécurisé avant de te connecter !");
+        });
+    </script>
+</body>
+</html>
