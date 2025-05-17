@@ -14,7 +14,6 @@ main {
         transform: translate(-50%, -50%);
         display: flex;
         flex-direction: column;
-        gap: 25px;
         width: 25%;
         background-color: white;
         padding: 50px;
@@ -22,20 +21,39 @@ main {
 
         h1 {
             text-align: center;
+            font-family: "Underdog", system-ui;
+            margin-bottom: 50px;
+
+            &::after {
+                content: '';
+                display: block;
+                border-top: solid 3px lightblue;
+                width: 15%;
+                margin: 10px auto 0;
+            }
+        }
+
+        label {
+            font-family: "Ubuntu", sans-serif;
+            transform: translateY(50%);
+            background-color: white;
+            width: fit-content;
+            margin-left: 10px;
+            padding: 0 10px;
         }
 
         input {
             border: solid 1px black;
-            padding: 10px;
-
-            &::placeholder {
-                color: black;
-            }
+            font-family: "Ubuntu", sans-serif;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 10px;
         }
 
         button {
             border: none;
             background-color: lightblue;
+            font-family: "Ubuntu", sans-serif;
             display: flex;
             align-items: center;
             gap: 10px;
