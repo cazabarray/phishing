@@ -28,7 +28,7 @@ main form h1::after {
   content: "";
   display: block;
   border-top: solid 2px lightblue;
-  width: 15%;
+  width: 25%;
   margin: 10px auto 0;
 }
 main form label {
